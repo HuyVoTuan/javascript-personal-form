@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000;
+  background-color: #ececec;
+}
+
+@media only screen and (max-width: 768px) {
+  #actions-header,
+  #actions-button {
+    display: none;
+  }
+}

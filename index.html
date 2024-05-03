@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Javascript Personal Form</title>
+  </head>
+  <body class="p-12">
+    <div class="header">
+      <div class="px-8 py-4 md:container md:mx-auto md:mb-3 lg:p-10">
+        <h2
+          class="mb-2 text-2xl font-semibold text-slate-700 md:text-4xl lg:text-6xl"
+        >
+          Responsive Form
+        </h2>
+        <p class="text-xl text-slate-500 md:text-3xl lg:text-5xl">
+          Form is mobile responsive. Give it a try.
+        </p>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="mb-3 px-8 py-4 md:container md:mx-auto">
+        <!-- FORM LAYOUT -->
+        <div
+          class="gird-rows-6 grid gap-4 rounded-md bg-white p-8 drop-shadow-lg lg:grid-cols-2 lg:gap-8 lg:p-10"
+        >
+          <!-- LEFT FORM SIDE -->
+          <div class="lg:p-10">
+            <h3
+              class="mb-2 text-2xl font-semibold text-slate-700 md:text-3xl lg:text-4xl"
+            >
+              Personal Details
+            </h3>
+            <p class="text-xl text-slate-500 md:text-2xl lg:text-3xl">
+              Please fill out all the fields.
+            </p>
+          </div>
+
+          <!-- RIGHT FORM SIDE -->
+          <div class="lg:p-10">
+            <form action="" id="form">
+              <!-- INLINE INPUTS -->
+              <div class="lg:flex lg:items-center lg:justify-center">
+                <div class="mb-3 lg:mr-8 lg:flex-1">
+                  <!-- FIRSTNAME INPUT -->
+                  <label
+                    for="firstname"
+                    class="mb-2 block text-lg md:text-xl lg:text-2xl"
+                    >Firstname</label
+                  >
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    class="w-full truncate rounded-sm border bg-gray-50 p-4 focus:outline-none focus:ring-2 focus:ring-black lg:p-6"
+                    autocomplete="off"
+                  />
+                  <span
+                    class="md:text-md block h-10 py-2 text-sm text-red-500 lg:text-lg"
+                  ></span>
+                </div>
+
+                <!-- LASTNAME INPUT -->
+                <div class="mb-3 lg:mb-6 lg:w-3/6 lg:flex-initial">
+                  <label
+                    for="lastname"
+                    class="mb-2 block text-lg md:text-xl lg:text-2xl"
+                    >Lastname</label
+                  >
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    class="w-full truncate rounded-sm border bg-gray-50 p-4 focus:outline-none focus:ring-2 focus:ring-black lg:p-6"
+                    autocomplete="off"
+                  />
+                  <span
+                    class="md:text-md block h-10 py-2 text-sm text-red-500 lg:text-lg"
+                  ></span>
+                </div>
+              </div>
+
+              <!-- EMAIL INPUT -->
+              <div class="mb-3 lg:mb-6">
+                <label
+                  for="email"
+                  class="text:lg mb-2 block md:text-xl lg:text-2xl"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full rounded-sm border bg-gray-50 p-4 focus:outline-none focus:ring-2 focus:ring-black lg:p-6 lg:text-xl"
+                  autocomplete="off"
+                  placeholder="email@domain.com"
+                />
+                <span
+                  class="md:text-md block h-10 py-2 text-sm text-red-500 lg:text-lg"
+                ></span>
+              </div>
+
+              <!-- ADDRESS INPUT -->
+              <div class="mb-3 lg:mb-6">
+                <label
+                  for="address"
+                  class="text:lg mb-2 block md:text-xl lg:text-2xl"
+                  >Address</label
+                >
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  class="w-full rounded-sm border bg-gray-50 p-4 focus:outline-none focus:ring-2 focus:ring-black lg:p-6 lg:text-xl"
+                  autocomplete="off"
+                />
+                <span
+                  class="md:text-md block h-10 py-2 text-sm text-red-500 lg:text-lg"
+                ></span>
+              </div>
+
+              <!-- INLINE INPUTS -->
+              <div class="lg:flex lg:items-center lg:justify-center">
+                <div class="mb-3 lg:mr-8 lg:flex-1">
+                  <!-- ADDRESS INPUT -->
+                  <label
+                    for="city"
+                    class="mb-2 block text-lg md:text-xl lg:text-2xl"
+                    >City</label
+                  >
+                  <select
+                    name="city"
+                    id="city"
+                    class="md:text-md w-full truncate rounded-sm border bg-gray-50 p-4 text-sm focus:outline-none focus:ring-2 focus:ring-black lg:p-6 lg:text-lg"
+                  >
+                    <option value="default">Please choose a city</option>
+                    <option value="hcm">TP. Ho Chi Minh</option>
+                    <option value="usa">Texas</option>
+                  </select>
+                  <span
+                    class="md:text-md block h-10 py-2 text-sm text-red-500 lg:text-lg"
+                  ></span>
+                </div>
+
+                <!-- DISTRICT INPUT -->
+                <div class="mb-3 lg:mb-6 lg:w-3/6 lg:flex-initial">
+                  <label
+                    for="district"
+                    class="mb-2 block text-lg md:text-xl lg:text-2xl"
+                    >District</label
+                  >
+                  <select
+                    name="district"
+                    id="district"
+                    class="md:text-md w-full truncate rounded-sm border bg-gray-50 p-4 text-sm focus:outline-none focus:ring-2 focus:ring-black lg:p-6 lg:text-lg"
+                  >
+                    <option value="default">Please choose a district</option>
+                    <option value="phu-nhuan-district">
+                      Phu Nhuan District
+                    </option>
+                    <option value="district-21">District 21</option>
+                  </select>
+                  <span
+                    class="md:text-md block h-10 py-2 text-sm text-red-500 lg:text-lg"
+                  ></span>
+                </div>
+              </div>
+
+              <!-- SUBMIT BUTTON -->
+              <div class="flex items-center justify-end">
+                <button
+                  class="rounded-lg bg-blue-500 px-4 py-2 text-lg font-semibold text-white hover:bg-blue-600 md:px-8 md:py-4 md:text-xl"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- DATA SHOWCASE -->
+      <div class="footer">
+        <!-- TODO: REFACTOR CODE -->
+        <div class="mb-3 px-8 py-4 drop-shadow-lg md:container md:mx-auto">
+          <p>
+            Total pages: <span class="font-semibold" id="total-pages"></span>
+          </p>
+          <input
+            type="number"
+            id="limit-item"
+            placeholder="limit item per page"
+          />
+        </div>
+
+        <div class="mb-3 px-8 py-4 drop-shadow-lg md:container md:mx-auto">
+          <div class="overflow-x-auto">
+            <table class="min-w-full table-auto">
+              <thead
+                class="md:text-md bg-gray-50 text-left text-sm uppercase lg:text-center lg:text-xl"
+              >
+                <tr>
+                  <th class="border border-slate-300 px-6 py-3" scope="col">
+                    Firstname
+                  </th>
+                  <th class="border border-slate-300 px-6 py-3" scope="col">
+                    Lastname
+                  </th>
+                  <th class="border border-slate-300 px-6 py-3" scope="col">
+                    Email Address
+                  </th>
+                  <th class="border border-slate-300 px-6 py-3" scope="col">
+                    Address
+                  </th>
+                  <th class="border border-slate-300 px-6 py-3" scope="col">
+                    City
+                  </th>
+                  <th
+                    class="border border-slate-300 px-6 py-3"
+                    scope="col"
+                    id="actions-header"
+                  >
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                <tr>
+                  <td
+                    class="md:text-md p-10 text-center text-sm lg:text-2xl"
+                    colspan="6"
+                  >
+                    No Data
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="mb-3 px-8 py-4 drop-shadow-lg md:container md:mx-auto">
+          <div class="flex flex-col items-center justify-end lg:flex-row">
+            <p class="text-lg md:text-xl lg:text-2xl lg:uppercase">
+              Showing <span class="font-bold" id="limit-items">0</span> out of
+              <span class="font-semibold" id="total-items"></span> entries
+            </p>
+            <div class="ml-2 inline-flex lg:ml-6">
+              <button
+                id="prev"
+                class="flex items-center justify-center rounded-sm border-r-2 border-white bg-blue-500 px-4 py-2 text-lg font-semibold text-white hover:bg-blue-600 md:text-xl"
+              >
+                <svg
+                  class="me-2 h-2 w-2 md:h-3.5 md:w-3.5 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 5H1m0 0 4 4M1 5l4-4"
+                  />
+                </svg>
+                Prev
+              </button>
+              <button
+                id="next"
+                class="flex items-center justify-center rounded-sm bg-blue-500 px-4 py-2 text-lg font-semibold text-white hover:bg-blue-600 md:text-xl"
+              >
+                Next
+                <svg
+                  class="ms-2 h-2 w-2 md:h-3.5 md:w-3.5 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
+</html>
